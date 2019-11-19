@@ -1,0 +1,109 @@
+
+@import "compass/reset";
+@import "mixins.scss";
+
+@media only screen and (min-width: 1440px) {
+
+}
+@media only screen and (max-width: 1440px) { // Laptop L
+
+}
+@media only screen and (max-width: 1200px) { // Laptop L
+  .wrapTopSite{
+  	.wrapLogo{
+     img{
+     }
+  	}
+  	.wrapMenu{
+  		nav{
+  			ul{
+
+  				li{
+            margin: 12px!important;
+  					a{
+                  padding: 6px 0!important;
+              font-size: 0.7em!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) { // Laptop
+  #block-block-19{
+    display:block!important;
+    .idiomas{
+      text-align: center!important;
+      img{
+        width: 37px!important;
+        height: auto!important;
+      }
+    }
+  }
+  #block-block-1{
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .testimonials .item {
+      width: 100%!important;
+      margin-bottom: 30px!important;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .bckg-opacity{
+    line-height: 26px!important;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+  .page-user .tabs ul.primary li, .page-user-login .tabs ul.primary li{
+    display: block!important;
+    a{
+      display: block!important;
+    }
+  }
+
+  .page-user, .page-user-login, .page-user-register{
+  	#user-login, #user-register-form, #user-pass, .profile{
+  		width: 100%!important;
+    }
+  }
+  .node-type-restricted .block-webform{
+    width:100%!important;
+  }
+  .bckg-opacity{
+    line-height: 14px!important;
+  }
+  .wrapInfoFooter article {
+    width:100%!important;
+  }
+  .page-news-posts .view-news-posts .view-content {
+    @include justify-content(center!important);
+  }
+  .view-rooms-auditory .view-content{
+    @include justify-content(center!important);
+  }
+
+  #block-block-17,
+  #block-block-14,
+  #block-block-13,
+  #block-block-12,
+  #block-block-11,
+  #block-block-9 {
+    padding-top: 135px!important;
+    .titles-tochange{
+      font-size: 25px!important;
+    }
+  }
+}
+@media only screen and (max-width: 480px){
+  .bckg-opacity{
+    display: none!important;
+  }
+}
+@media only screen and (max-width: 320px){
+
+}

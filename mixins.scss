@@ -1,0 +1,98 @@
+@import "compass/css3";
+
+// colores
+$blanco : #FFF;
+$negro : #000;
+$gris: #6f7c7d;
+$grisOscuro: #222;
+$grisOscuro3: #333;
+$titulares-blog:#282828;
+$grisTxt2: #474747;
+$grisClaroTxt: #9b9b9b;
+$grisClaroTxt2: #5e5e5e;
+$grisClaroTxt3: #f5f4f4;
+$grisMuyClaro: #f9f9f9;
+$grisMuyClaro2: #f4f4f4;
+$grisMuyClaro3: #e3e3e3;
+$rojo: #ea002a;
+$azul: #1e2b50; //Azul corporativo
+$dorado: #87714d;
+$turquesa: #1e2b50;
+$verde: #d51633; // rojo corporativo
+$grisCeleste: #c9ccdb;
+// tipo
+
+@font-face {
+    font-family: coper;
+    src: url('/themes/bootstrap_business/cooper/Copperplate.ttc'),
+    url('/themes/bootstrap_business/cooper/copperplate-gothic-bold-regular.woff');
+}
+
+$tipo: coper;
+$tipo2: 'Noto Serif', serif;
+$tipo3: 'Helvetica', sans-serif;
+
+@mixin transicion($val){
+	-webkit-transition: $val;
+	-moz-transition: $val;
+	-o-transition: $val;
+	transition: $val;
+}
+
+@mixin background($val){
+	 -webkit-background-size: $val;
+	 -moz-background-size: $val;
+	 -o-background-size: $val;
+	 background-size: $val;
+}
+
+// requiere compass/css3
+@mixin flexo{
+	@include display-flex(flex);
+	@include align-items(flex-end);
+	@include justify-content(center);
+}
+
+@mixin flexo2{
+	@include display-flex(flex);
+	@include align-items(start);
+	@include justify-content(center);
+}
+
+@mixin flexo3{
+	@include display-flex(flex);
+	@include align-items(center);
+	@include justify-content(center);
+}
+
+@mixin wyh {
+	width: 100%;
+	height: auto;
+}
+
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
